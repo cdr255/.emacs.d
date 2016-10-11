@@ -1,13 +1,14 @@
 (require 'package)
-(require 'use-package)
 ;; the exact path may differ -- check it
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
 (add-to-list 'load-path "~/.emacs.d/lisp")
+;(require 'fountain-mode)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
 	     '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
+(require 'use-package)
 ;;
 ;;
 ;;
@@ -15,7 +16,7 @@
 ;; USE PACKAGE LIST
 (use-package 2048-game :ensure t)
 (use-package aa-edit-mode :ensure t)
-(use-package abc-mode :ensure t)
+;(use-package abc-mode :ensure t)
 (use-package calmer-forest-theme :ensure t)
 (use-package caps-lock :ensure t)
 (use-package cm-mode :ensure t)
@@ -27,7 +28,7 @@
 (use-package esxml :ensure t)
 (use-package f :ensure t)
 (use-package fountain-mode :ensure t)
-(use-package gnupg :ensure t)
+;(use-package gnupg :ensure t)
 (use-package hardcore-mode :ensure t)
 (use-package hardhat :ensure t)
 (use-package haxor-mode :ensure t)
@@ -71,7 +72,7 @@
 (use-package sprintly-mode :ensure t)
 (use-package steam :ensure t)
 (use-package stock-ticker :ensure t)
-(use-package stream :ensure t)
+;(use-package stream :ensure t)
 (use-package strie :ensure t)
 (use-package strings :ensure t)
 (use-package stumpwm-mode :ensure t)
