@@ -16,5 +16,9 @@
 (column-number-mode 1)
 
 ;; Load my chosen default theme
-(load-theme 'grandshell)
+;(load-theme 'grandshell)
 ;(load-theme 'calmer-forest)
+(load-theme 'jazz)
+
+;; Let Emacs and JWM work together
+(setq frame-resize-pixelwise t)

@@ -44,3 +44,7 @@
   (interactive)
   (cdr255-write 1667)
   )
+
+;; Org Journal
+
+;(setq org-journal-dir "~/nework/org/journal/")
