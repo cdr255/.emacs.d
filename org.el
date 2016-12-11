@@ -1,7 +1,7 @@
 ;; Org-mode
-(setq org-agenda-files (quote ("~/cdr255/Org")))
-(setq org-directory "~/git/org")
-(setq org-default-notes-file "~/git/org/refile.org")
+(setq org-agenda-files (quote ("~/nework/org")))
+(setq org-directory "~/nework/org")
+(setq org-default-notes-file "~/nework/org/notes.org")
 
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE")
@@ -15,13 +15,15 @@
 
 ;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
 (setq org-capture-templates
-      (quote (("t" "todo" entry (file "~/cdr255/Org/refile.org")
+      (quote (("t" "todo" entry (file "~/nework/org/notes.org")
                "* TODO %?\n" :clock-in t :clock-resume t)
-              ("n" "note" entry (file "~/cdr255/Org/refile.org")
+              ("n" "note" entry (file "~/nework/org/notes.org")
                "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
-              ("j" "journal" entry (file+datetree "~/cdr255/Org/diary.org")
-               "* %?\n%U\n" :clock-in t :clock-resume t)
-              ("p" "Phone call" entry (file "~/cdr255/Org/refile.org")
+              ("p" "Phone call" entry (file "~/nework/org/notes.org")
                "* PHONE %? :PHONE:\n" :clock-in t :clock-resume t)
-              ("h" "Habit" entry (file "~/cdr255/Org/refile.org")
+              ("h" "Habit" entry (file "~/nework/org/notes.org")
                "* TODO %?\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a .+1d/3d>>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: TODO\n:END:\n"))))
+
+;; Org Journal
+
+(setq org-journal-dir "~/nework/org/journal/")

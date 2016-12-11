@@ -60,6 +60,7 @@
 (use-package muse :ensure t)
 (use-package name-this-color :ensure t)
 (use-package org-plus-contrib :ensure t)
+(use-package org-journal :ensure t)
 (use-package pretty-mode :ensure t)
 (use-package quack :ensure t)
 (use-package rainbow-mode :ensure t)
