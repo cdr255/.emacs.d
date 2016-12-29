@@ -1,3 +1,6 @@
+;; OAuth
+(setq oauth-nonce-function 'oauth-internal-make-nonce)
+
 ;; Load lilypond
  (autoload 'LilyPond-mode "lilypond-mode")
 (setq auto-mode-alist
@@ -21,8 +24,15 @@
 ;; Mingus
 (require (quote mingus-stays-home))
 
+;; Tumblesocks
+(require 'tumblesocks)
+(setq tumblesocks-blog "cdr255.tumblr.com")
+
 ;; Steam
 (setq steam-username "cdr255") ;; Replace Username with your steam username
+
+;; Use js2-mode instead of js-mode
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; Typo Mode
 (setq-default typo-language 'English)

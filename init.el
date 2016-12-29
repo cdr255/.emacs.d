@@ -3,6 +3,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(abc-option-alist
+   (quote
+    (("pretty" . "-p")
+     ("pretty2" . "-P")
+     ("fbook" . "-F fbook.fmt")
+     ("landscape" . "-F landscape.fmt")
+     ("tight" . "-F tight.fmt")
+     ("none" . "")
+     ("cdr255" . "-X"))))
+ '(abc-preferred-options "-X")
  '(browse-url-browser-function (quote browse-url-generic))
  '(browse-url-generic-program "conkeror")
  '(custom-safe-themes
@@ -18,13 +28,14 @@
     (("Erenen"
       ("~/work/Erenen" :default "index")
       (:base "html" :path "~/work/published/html/erenen")
-      (:base "pdf" :path "~/work/published/pdf/erenen"))))))
+      (:base "pdf" :path "~/work/published/pdf/erenen")))))
+ '(tumblesocks-blog (quote cdr255\.tumblr\.com)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "gray8" :foreground "gainsboro" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :foundry "monotype" :family "Noto Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "color-234" :foreground "color-247" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "monotype" :family "Noto Sans Mono")))))
 ;;'(default ((t (:inherit nil :stipple nil :background "gray12" :foreground "green" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 135 :width normal :foundry "monotype" :family "Noto Mono")))))
 
 
