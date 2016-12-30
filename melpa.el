@@ -114,6 +114,7 @@
 (use-package transmission :ensure t)
 (use-package trr :ensure t)
 (use-package try :ensure t)
+(use-package tumblesocks :ensure t)
 (use-package twig-mode :ensure t)
 (use-package twittering-mode :ensure t)
 (use-package typing :ensure t)

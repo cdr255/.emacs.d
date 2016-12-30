@@ -5,7 +5,7 @@
 
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE")
-	(sequence "DAILY" "|" "COMPLETE")
+	(sequence "HABIT" "|" "COMPLETE")
 	(sequence "WEEKLY" "|" "SUCCESS")
 	(sequence "BEGIN" "IN PROGRESS" "REVIEW" "|" "FINISHED")
 	(sequence "|" "CANCELED")))
