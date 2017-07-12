@@ -18,7 +18,8 @@
 ;; Load my chosen default theme
 ;(load-theme 'grandshell)
 ;(load-theme 'calmer-forest)
-(load-theme 'jazz)
+;(load-theme 'jazz)
+;(load-theme 'cyberpunk)
 
 ;; Let Emacs and JWM work together
 (setq frame-resize-pixelwise t)

@@ -8,6 +8,9 @@
 
 (add-hook 'LilyPond-mode-hook (lambda () (turn-on-font-lock)))
 
+;; Elfeed
+(elfeed-org)
+
 ;; Twittering
 (setq twittering-use-master-password t)
 (setq twittering-allow-insecure-server-cert t)
@@ -55,3 +58,21 @@
   (cdr255-write 1667)
   )
 
+;; Paredit
+;;; Stop SLIME from grabbing DEL from Paredit
+(defun override-slime-repl-bindings-with-paredit ()
+  (define-key slime-repl-mode-map
+    (read-kbd-macro paredit-backward-delete-key) nil))
+;;; Paredit Hooks
+(autoload 'enable-paredit-mode "Paredit" "Turn on pseudo-structural editing of LISP code." t)
+(add-hook 'emacs-lisp-mode-hook                  #'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook                        #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook                        #'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook            #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook                      #'enable-paredit-mode)
+(add-hook 'slime-repl-mode-hook           (lambda () (paredit-mode +1)))
+(add-hook 'slime-repl-mode-hook
+	  'override-slime-repl-bindings-with-paredit)
+(eldoc-add-command 'paredit-backward-delete
+		   'paredit-close-round)

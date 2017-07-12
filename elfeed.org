@@ -1,0 +1,22 @@
+* Elfeed Blogs                                              :elfeed:
+** Emacs                                                              :emacs:
+*** [[http://planet.emacsen.org/atom.xml][Planet Emacsen]]
+** Geekdom                                                             :geek:
+*** [[https://litrpgreads.com/feed][LitRPG Blog]]
+** Software Development                                               :devel:
+*** [[http://nullprogram.com/feed][Null Program]]
+** TTRPG                                                              :ttrpg:
+*** [[http://www.5mwd.com/feed][5 Minute Workday]]                                                  :comic:
+*** [[http://dailybestiary.blogspot.com/feeds/posts/default][Daily Bestiary]]                                               :pathfinder:
+*** [[https://alzrius.wordpress.com/feed/][Intelligence Check]]
+*** [[http://paizo.com/paizo/blog&xml=atom][Paizo Blog]]                                           :pathfinder:company:
+** Webcomics                                                          :comic:
+*** [[https://tapas.io/rss/series/71347][Far Between]]                                                    :mustread:
+*** [[http://www.giantitp.com/comics/oots.rss][Order of the Stick]]
+*** [[http://www.gogetaroomie.com/rss.php][Go Get A Roomie]]
+*** [[http://www.misfile.com/rss.php][Misfile]]
+*** [[https://www.penny-arcade.com/feed][Penny Arcade]]
+*** [[http://www.questionablecontent.net/QCRSS.xml][Questionable Content]]
+*** [[http://somethingpositive.net/sp.xml][Something Positive]] 
+*** [[http://feeds.feedburner.com/StinkingHellebore?format=xml][Spork]]
+*** [[https://xkcd.com/rss.xml][XKCD]]

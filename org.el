@@ -1,7 +1,9 @@
 ;; Org-mode
-(setq org-agenda-files (quote ("~/nework/org")))
-(setq org-directory "~/nework/org")
-(setq org-default-notes-file "~/nework/org/notes.org")
+
+;; Org Agenda
+(setq org-agenda-files (quote ("~/work/org")))
+(setq org-directory "~/work/org")
+(setq org-default-notes-file "~/work/org/notes.org")
 
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE")
@@ -26,4 +28,16 @@
 
 ;; Org Journal
 
-(setq org-journal-dir "~/nework/org/journal/")
+(setq org-journal-dir "~/work/org/journal/")
+
+;; ;; Org Projects
+
+;; (setq org-publish-project-alist
+;;            '(("org blog"
+;;               :base-directory "~/work/org/blog/"
+;;               :publishing-directory "~/work/org/blog-published"
+;;               :section-numbers nil
+;;               :with-toc nil
+;;               :html-head "<link rel=\"stylesheet\"
+;;                          href=\"../other/mystyle.css\"
+;;                          type=\"text/css\"/>")))
