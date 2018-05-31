@@ -12,8 +12,7 @@
 	(sequence "BEGIN" "IN PROGRESS" "REVIEW" "|" "FINISHED")
 	(sequence "|" "CANCELED")))
 
-;; I use C-<f12> to start capture mode
-(global-set-key (kbd "C-<f12>") 'org-capture)
+;; I use C-<f12> to start capture mode (in keys.el)
 
 ;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
 (setq org-capture-templates

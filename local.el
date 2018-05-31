@@ -11,12 +11,12 @@
 ;; Elfeed
 (elfeed-org)
 
-;; Twittering
-(setq twittering-use-master-password t)
-(setq twittering-allow-insecure-server-cert t)
-(setq twittering-tinyurl-service 'bit.ly)
-(setq twittering-bitly-login "cdr255")
-(setq twittering-bitly-api-key "R_9847306db8446539e9dae1e0a97c6673")
+;;; Twittering
+;(setq twittering-use-master-password t)
+;(setq twittering-allow-insecure-server-cert t)
+;(setq twittering-tinyurl-service 'bit.ly)
+;(setq twittering-bitly-login "cdr255")
+;(setq twittering-bitly-api-key "R_9847306db8446539e9dae1e0a97c6673")
 
  ;; ;; Hardcore Mode Concessions
  ;; (require 'hardcore-mode)
@@ -27,15 +27,15 @@
 ;; Mingus
 (require (quote mingus-stays-home))
 
-;; Tumblesocks
-(require 'tumblesocks)
-(setq tumblesocks-blog "cdr255.tumblr.com")
+;;; Tumblesocks
+;(require 'tumblesocks)
+;(setq tumblesocks-blog "cdr255.tumblr.com")
 
-;; Steam
-(setq steam-username "cdr255") ;; Replace Username with your steam username
+;;; Steam
+;(setq steam-username "cdr255") ;; Replace Username with your steam username
 
-;; Use js2-mode instead of js-mode
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;;; Use js2-mode instead of js-mode
+;(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; Typo Mode
 (setq-default typo-language 'English)
@@ -57,6 +57,7 @@
   (interactive)
   (cdr255-write 1667)
   )
+
 
 ;; Paredit
 ;;; Stop SLIME from grabbing DEL from Paredit
